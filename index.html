@@ -2,115 +2,129 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Temitayo Akinola | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
   <style>
-    * {
+    :root {
+      --primary: #111827;
+      --accent: #facc15;
+      --bg: #f9fafb;
+      --text: #1f2937;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text);
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
     }
-    body {
-      font-family: 'Fira Code', monospace;
-      background-color: #0f1117;
-      color: #eaeaea;
-      line-height: 1.6;
-    }
-    header {
+
+    .container {
+      max-width: 850px;
+      margin: auto;
       padding: 2rem;
       text-align: center;
-      background-color: #12151f;
     }
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-    header p {
-      font-size: 1.1rem;
-      color: #9b9b9b;
-    }
-    section {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 1rem 2rem;
-    }
-    h2 {
-      color: #56c7fa;
+
+    img.profile {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
       margin-bottom: 1rem;
-      font-size: 1.8rem;
+      border: 4px solid var(--primary);
     }
-    ul {
-      list-style: none;
-      padding-left: 0;
+
+    h1 {
+      font-size: 2.5rem;
+      margin: 0;
     }
-    li {
-      background: #1a1d2e;
-      padding: 0.7rem 1rem;
-      margin: 0.5rem 0;
-      border-radius: 6px;
-    }
-    a {
-      color: #56c7fa;
-      text-decoration: none;
-    }
-    .socials a {
-      margin-right: 1rem;
-      display: inline-block;
+
+    p.subtitle {
       font-size: 1.2rem;
+      color: #4b5563;
+      margin-bottom: 1.5rem;
     }
+
+    .section {
+      margin-top: 3rem;
+    }
+
+    .project {
+      background: white;
+      padding: 1rem 2rem;
+      margin-bottom: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      text-align: left;
+    }
+
+    .project h3 {
+      margin-top: 0;
+      color: var(--primary);
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 16px;
+      margin: 10px 5px 0;
+      background: var(--primary);
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: #000;
+    }
+
     footer {
-      text-align: center;
-      padding: 1rem;
-      background: #12151f;
-      color: #7c7c7c;
+      margin-top: 4rem;
+      color: #6b7280;
       font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      .project {
+        text-align: center;
+      }
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <img src="profile.jpg" alt="Temitayo's Photo" class="profile" />
+    <h1>👋 Hey, I'm Temitayo Akinola</h1>
+    <p class="subtitle">Aspiring Data Analyst | Data Engineer | Civil Engineer</p>
 
-<header>
-  <h1>Temitayo Akinola</h1>
-  <p>Aspiring Data Analyst | Data Engineer | Civil Engineer</p>
-</header>
+    <div class="section">
+      <h2>📂 Featured Projects</h2>
 
-<section>
-  <h2>👋 About Me</h2>
-  <p>
-    I'm a Civil Engineering graduate passionate about solving problems with data. I'm currently building skills in Data Analytics, Engineering, and Visualization. Tools I use include Python, R, SQL, Power BI, and Excel.
-  </p>
-</section>
+      <div class="project">
+        <h3>📊 Retail Sales Dashboard</h3>
+        <p>Analyzed 6-month retail data using Excel and Power BI. Built visual dashboards to track KPIs, highlight trends, and support business decision-making.</p>
+        <a class="btn" href="https://github.com/Temitayo-Akinola/retail-sales-dashboard" target="_blank">🔍 View GitHub Repo</a>
+      </div>
 
-<section>
-  <h2>🛠️ Skills</h2>
-  <ul>
-    <li>Python, R, SQL</li>
-    <li>P Excel</li>
-    <li>Data Cleaning & Visualization</li>
-    <li>AutoCAD, Civil Engineering Tools</li>
-    <li>Problem Solving, Communication</li>
-  </ul>
-</section>
+      <div class="project">
+        <h3>🧹 Data Cleaning with Python & SQL</h3>
+        <p>Used pandas and SQL to clean messy raw data from a civil engineering firm. Improved data quality and prepared it for analysis and reporting.</p>
+        <a class="btn" href="https://github.com/Temitayo-Akinola/data-cleaning-project" target="_blank">🔍 View GitHub Repo</a>
+      </div>
+    </div>
 
-<section>
-  <h2>📁 Projects</h2>
-  <p>Coming soon: personal and collaborative projects will be added here!</p>
-</section>
+    <div class="section">
+      <h2>🌐 Connect with Me</h2>
+      <a class="btn" href="mailto:temitayoobaloluwa91@gmail.com">📧 Email Me</a>
+      <a class="btn" href="https://linkedin.com/in/temitayo-akinola-1b9674310" target="_blank">💼 LinkedIn</a>
+      <a class="btn" href="https://github.com/Temitayo-Akinola" target="_blank">💻 GitHub</a>
+    </div>
 
-<section>
-  <h2>📬 Connect with Me</h2>
-  <div class="socials">
-    <a href="mailto:temitayoobaloluwa91@gmail.com">Email</a>
-    <a href="https://github.com/TEMI" target="_blank">GitHub</a>
-    <a href="https://www.linkedin.com/in/temitayo-akinola-1b9674310" target="_blank">LinkedIn</a>
+    <footer>
+      © 2025 Temitayo Akinola. Powered by GitHub Pages.
+    </footer>
   </div>
-</section>
-
-<footer>
-  &copy; 2025 Temitayo Akinola
-</footer>
-
 </body>
 </html>
